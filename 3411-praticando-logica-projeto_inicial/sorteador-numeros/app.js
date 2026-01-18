@@ -8,7 +8,7 @@ function sortear() {
     let sorteados = [];
     let numero;
 
-    if (de > ate ) {
+    if (quantidade > (ate - de + 1))  {
         alert('Por favor, reveja se você inseriu os dados corretamente');
     return; //“Se os valores estiverem errados, avisa o usuário e para tudo aqui.”
     }
