@@ -15,10 +15,10 @@ function sortear() {
 
     for(let i = 0; i < quantidade; i++) {
         numero = obterNumeroAleatorio(de,ate);
-        while (sorteados.includes(numero)) {
+        while (sorteados.includes(numero)) { //“Esse número já foi sorteado?”
             numero = obterNumeroAleatorio(de, ate);
         }
-        sorteados.push(numero);
+        sorteados.push(numero); //“Agora que esse número é válido e único, guarda ele na lista de sorteados”
     }
     
     let resultado = document.getElementById('resultado');
