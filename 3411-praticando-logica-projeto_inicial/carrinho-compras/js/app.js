@@ -4,14 +4,17 @@ function adicionar() {
     //adicionar no carrinho
     //atualizar o valor total da compra
 
-    let nome_do_produto = produto.split('-')[0];
     let produto = document.getElementById('produto').value;
-    let valorUnitario = produto.split('R$')[1];
-    let quantidade_do_produto = document.getElementById('quantidade');
-    alert(nome_do_produto.value);
-    alert(quantidade_do_produto.value);
+    let nomeProduto = produto.split('-')[0];
+    let valorUnitario = produto.split('R$')[1]; 
+    let quantidade = document.getElementById('quantidade'); 
+
+    alert(nomeProduto);
     alert(valorUnitario);
+    alert(quantidade.value);
+    
     let preco = quantidade.value * valorUnitario;
+
     alert(preco);
 } 
 
